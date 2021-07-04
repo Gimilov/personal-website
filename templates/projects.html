@@ -1,0 +1,115 @@
+{% extends "layout.html" %} 
+
+{% block title %}
+    Projects
+{% endblock %}
+
+{% block currenttab %}
+
+    <a class="navbar-item has-text-white" href="/index">
+        About me
+    </a>
+
+    <a class="navbar-item has-text-white is-tab is-active" href="/projects">
+        Projects
+    </a>
+
+    <a class="navbar-item has-text-white" href="/experience">
+        Experience
+    </a>
+
+    <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link has-text-white">
+            More
+        </a>
+
+        <div class="navbar-dropdown">
+            <a class="navbar-item" href="/resume">
+                Resume and certifications
+            </a>
+            <a class="navbar-item" href="/recommendations">
+                Recommendations
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="/whygimilov">
+                Why Gimilov?
+            </a>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block main %} 
+    <section class="hero is-fullheight hero-background-project">
+        <div class="hero-body">
+            <p style="font-size: 7vw; margin-top: 2.5em;">
+                <strong class="has-text-white">My projects</strong>
+            </p>
+        </div>
+    </section>  
+
+    <section class="is-medium has-background-black">
+        <div class="container content has-text-white">
+            <div class="columns is-centered is-vcentered is-variable is-8">
+                <div class="column is-half">
+                    <p class="has-text-weight-light has-text-justified">So far, I have been doing mini-projects on <a target="_blank" href="https://www.jetbrains.com/academy/">Jetbrains Academy</a> to learn Python.</p>
+                    <p class="has-text-weight-light has-text-justified">Moreover, I have undertaken the CS50 Course offerred by Harvard in which I had to complete a final project in order to acquire a certificate. This project is the website you are looking at right now!</p>
+                </div>
+                <div class="column is-half">
+                    <div class="columns is-centered">
+                        <div class="column is-four-fifths">
+                            <div class="box hero-background-project1 rounded-corners project-outline has-text-centered">
+                                <img class="rounded-corners" src="static/cs50.jpg">
+                                <h3 class="has-text-white mt-0">gimilov.github.io</h3>
+                                <p class="has-text-white has-text-justified">
+                                    A great introductory course to computer science. Here I learned a bit about C, HTML, CSS, JavaScript, Python,, Flask and some CSS frameworks like Bulma or Bootstrap! As for my <strong class="has-text-white">final project</strong>, I created this website. I learned a lot new stuff about web development and data management.
+                                </p>   
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <div class="container content has-text-centered">
+                <h1 class="has-text-white">Mini projects</p>
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-one-quarter>">
+                    <div class="box hero-background-project2 rounded-corners project-outline has-text-centered">
+                        <img class="rounded-corners" src="static/todolist.png">
+                        <h4 class="has-text-white mt-0">To-do list</h4>
+                        <p class="has-text-white has-text-justified">
+                            To-do list made in Python with the help of SQL.
+                        </p>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box hero-background-project2 rounded-corners project-outline has-text-centered">
+                        <img class="rounded-corners" src="static/tictactoe.png">
+                        <h4 class="has-text-white mt-0">Tic-tac-toe with AI</h4>
+                        <p class="has-text-white has-text-justified">
+                            Tic-tac-toe with basic AI (minimax algorithm).
+                        </p>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box hero-background-project2 rounded-corners project-outline has-text-centered">
+                        <img class="rounded-corners" src="static/simplebankingsystem.png">
+                        <h4 class="has-text-white mt-0">Simple banking system</h4>
+                        <p class="has-text-white has-text-justified">
+                            Account creation, editing, transferring using the basics of Python and SQL.
+                        </p>
+                    </div>
+                </div>
+                <div class="column is-one-quarter">
+                    <div class="box hero-background-project2 rounded-corners project-outline has-text-centered">
+                        <img class="rounded-corners" src="static/matrixprocessor.png">
+                        <h4 class="has-text-white mt-0">Numeric matrix processor</h4>
+                        <p class="has-text-white has-text-justified">
+                            Basic matrix calculator using the basics of Python.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

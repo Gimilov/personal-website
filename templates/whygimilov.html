@@ -1,0 +1,61 @@
+{% extends "layout.html" %} 
+
+{% block title %}
+    Why Gimilov?
+{% endblock %}
+
+{% block currenttab %}
+
+    <a class="navbar-item has-text-white" href="/index">
+        About me
+    </a>
+
+    <a class="navbar-item has-text-white" href="/projects">
+        Projects
+    </a>
+
+    <a class="navbar-item has-text-white" href="/experience">
+        Experience
+    </a>
+
+    <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link has-text-white">
+            More
+        </a>
+
+        <div class="navbar-dropdown">
+            <a class="navbar-item" href="/resume">
+                Resume and certifications
+            </a>
+            <a class="navbar-item" href="/recommendations">
+                Recommendations
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item is-tab is-active" href="/whygimilov">
+                Why Gimilov?
+            </a>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block main %} 
+
+    <section class="hero hero-background-gimilov is-fullheight">
+        <div class="hero-body">
+            <div class="">
+                <div class="columns">
+                    <div class="column is is-two-fifths">
+                        <p style="font-size: 5.5vw; padding-bottom: 0.6em;" class="title has-text-white">
+                            Why Gimilov?
+                        </p>
+                        <p class="subtitle has-text-white has-text-justified">
+                            The inspiration for the nickname was derived from <a target="_blank" href="https://www.youtube.com/watch?v=jPan651rVMs">Joji's "Gimme Love" song</a>. Since the release it has become one of my favourite songs and I have been using the nickname ever since.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

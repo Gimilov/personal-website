@@ -1,0 +1,153 @@
+{% extends "layout.html" %} 
+
+{% block title %}
+    Experience
+{% endblock %}
+
+{% block currenttab %}
+
+    <a class="navbar-item has-text-white" href="/index">
+        About me
+    </a>
+
+    <a class="navbar-item has-text-white" href="/projects">
+        Projects
+    </a>
+
+    <a class="navbar-item has-text-white is-tab is-active" href="/experience">
+        Experience
+    </a>
+
+    <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link has-text-white">
+            More
+        </a>
+
+        <div class="navbar-dropdown">
+            <a class="navbar-item" href="/resume">
+                Resume and certifications
+            </a>
+            <a class="navbar-item" href="/recommendations">
+                Recommendations
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="/whygimilov">
+                Why Gimilov?
+            </a>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block main %} 
+    <section class="hero hero-background-experience is-fullheight">
+        <div class="hero-body">
+            <div class="">
+                <p class="title has-text-white has-text-weight-bold" style="margin-top: 2.5em; font-size: 7vw;">
+                Experience
+                </p>
+                <p class="subtitle has-text-white">
+                ... my journey so far.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section hero-background-herning"> 
+        <section class="columns">
+            <section class="column is-half">
+                <div class="card rounded-corners">
+                    <div class="card-image">
+                        <figure class="image is-2by1">
+                            <img src="static/truestory.jpg">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img src="static/truestory_logo.jpg">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4">Student Business Analyst at TrueStory</p>
+                                <p class="subtitle is-6">
+                                    <a target="_blank" href="https://www.linkedin.cn/company/duglemmerdetaldrig-dk/">LinkedIn</a> | <a target="_blank" href="https://truestory.com/">Website</a>
+                                </p>
+                            </div>
+                        </div>
+                    
+                        <div class="content has-text-justified" style="margin-top:-0.5em">
+                            Here, I was accepted for the student position of business analyst. The job starts in September and I just can't wait to be there already.
+                            <br style="margin-bottom: 0.75em;">
+                            <p class="has-text-centered">Aarhus | September 2021 - present</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="column is-half">
+                <div class="card rounded-corners">
+                    <div class="card-image">
+                        <figure class="image is-2by1">
+                            <img src="static/au_herning.jpg">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img src="static/au_logo.png">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4">Student Teacher of Management Accounting at Aarhus University</p>
+                                <p class="subtitle is-6">
+                                    <a target="_blank" href="https://www.linkedin.cn/school/aarhus-university-denmark-/mycompany/">LinkedIn</a> | <a target="_blank" href="https://btech.au.dk/">Website</a>
+                                </p>
+                            </div>
+                        </div>
+                    
+                        <div class="content has-text-justified" style="margin-top:-0.5em">
+                            As a student teacher, I have to prepare exercise classes where we strengthen our understanding of the subject of Management Accounting and put the theory in practice. My responsibilities are to resolve student's problems regarding subject-related issues, prepare activities and supervise them in their group work.
+                            <br style="margin-bottom: 0.75em;">
+                            <p class="has-text-centered">Herning | February 2021 - present</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="columns">
+            <section class="column is-half">
+                <div class="card rounded-corners">
+                    <div class="card-image">
+                        <figure class="image is-2by1">
+                            <img src="static/au_herning1.jpg">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img src="static/au_logo.png">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4">Student Teacher of Financial Accounting at Aarhus University</p>
+                                <p class="subtitle is-6">
+                                    <a target="_blank" href="https://www.linkedin.cn/school/aarhus-university-denmark-/mycompany/">LinkedIn</a> | <a target="_blank" href="https://btech.au.dk/">Website</a>
+                                </p>
+                            </div>
+                        </div>
+                    
+                        <div class="content has-text-justified" style="margin-top:-0.5em">
+                            As a student teacher, I have to prepare exercise classes where we strengthen our understanding of the subject of Financial Accounting and put the theory in practice. My responsibilities are to resolve student's problems regarding subject-related issues, prepare activities and supervise them in their group work.
+                            <br style="margin-bottom: 0.75em;">
+                            <p class="has-text-centered">Herning | September 2020 - present</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+{% endblock %}

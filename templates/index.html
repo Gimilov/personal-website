@@ -1,0 +1,99 @@
+{% extends "layout.html" %} 
+
+{% block title %}
+    About me
+{% endblock %}
+
+{% block currenttab %}
+
+    <a class="navbar-item has-text-white is-tab is-active" href="/index">
+        About me
+    </a>
+
+    <a class="navbar-item has-text-white" href="/projects">
+        Projects
+    </a>
+
+    <a class="navbar-item has-text-white" href="/experience">
+        Experience
+    </a>
+
+    <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link has-text-white">
+            More
+        </a>
+
+        <div class="navbar-dropdown">
+            <a class="navbar-item" href="/resume">
+                Resume and certifications
+            </a>
+            <a class="navbar-item" href="/recommendations">
+                Recommendations
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="/whygimilov">
+                Why Gimilov?
+            </a>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block main %} 
+    <section class="hero is-info is-fullheight hero-background-about">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-half has-text-weight-bold">
+                        <p style="font-size: 7vw; margin-top: 2.5em; margin-left: -0.3em;"><strong>Milosz Bator</strong></p>
+                        <p class="has-text-justified is-size-5">
+                            ...fuelled by coffee and passion.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section is-medium has-background-black">
+        <div class="container content">
+            <div class="columns">
+                <div class="column is-three-fifths">
+                    <h1 class="is-size-1 has-text-weight-bold"><strong class="has-text-white">About me</strong></h1>
+                    <div class="container is-size-5 has-text-weight-light has-text-justified has-text-white">
+                        <p>My name is Milosz and Gimilov is only my nickname. I am from Poland and I live in Herning, Denmark.</p>
+                        <p>My choice to study bachelor of Economics and Business Administration at Aarhus University was driven by many factors, but those most decisive were my huge interest in the field, being great with numbers and data analysis. What are my plans for education afterwards? Well, the answer is - master's degree of <strong class="has-text-white">Business Intelligence</strong></p>
+                        <p>As for programming, it is a big interest of mine and I believe I can become well-taught on my own and it is literally what I strive for. This website is only a beginning, as a part of my CS50 Course by Harvard. There are a lot more courses and projects incoming!</p>
+                        <p>In my leisure time, I enjoy doing many things - depending on the mood. Starting from various sports like powerlifting, walking and football to some fancy stuff like Rubik's cube solving or puzzles.</p>
+                        <p>Feel free to look through my website or contact me!</p>
+                    </div>
+                </div>
+                <div class="column is-two-fifts">
+                    <h1 class="is-size-3 has-text-weight-bold has-text-centered"><strong class="has-text-white">Get in touch!</strong></h1>
+                    <div class="container has-text-centered">
+                        <p>
+                            <div class="container">
+                                <a class="button is-rounded is-fullwidth is-dark" target="_blank" href="https://www.linkedin.cn/in/mi%C5%82osz-bator-9481a9193/">
+                                    <img src="static/LinkedIn.png" width="104" height="40">
+                                </a> 
+                            </div>
+                        </p>
+                        <p>
+                            <div class="container">
+                                <a class="button is-rounded is-fullwidth is-dark" target="_blank" href="https://github.com/Gimilov">
+                                    <img src="static/GitHub.png" width="104" height="40">
+                                </a>
+                            </div>
+                        </p>
+                        <p>
+                            <div class="container">
+                                <a class="button is-rounded is-fullwidth is-dark" target="_blank" href="mailto:miloszbator00@gmail.com?subject=Contact">
+                                    <img src="static/Envelope.png" width="95" height="37">
+                                </a>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+
+            <!-- meta tags that are required -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+            <!-- documentantion from https://bulma.io/documentation/overview/start/ -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+            <link rel="stylesheet" href="static/styles.css">
+            <!--link rel="stylesheet" href="static/debug.css"-->
+
+            <link href="static/favicon.png" rel="icon"> 
+            <title>{% block title %}{% endblock %}</title>
+            
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-color is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item">
+                    <img src="static/Gimilov.png" width="130" height="50">
+                </a>
+          
+                <a class="navbar-burger has-text-white" id="burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" role="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+          
+            <div class="navbar-menu" id="nav-links" id="navbarBasicExample">
+                <div class="navbar-start" id="currenttab">
+
+                    {% block currenttab %}{% endblock %}
+                    
+                </div>
+          
+            </div>
+        </nav>
+
+       <main class="has-background-grey-darker">
+           {% block main %}{% endblock %}
+       </main>
+
+       <script>
+
+            // mobile menu
+            const burgerIcon = document.querySelector('#burger');
+            const navbarMenu = document.querySelector('#nav-links');
+
+            burgerIcon.addEventListener('click', event => {
+                navbarMenu.classList.toggle('is-active');
+            });
+
+       </script>
+
+    </body>
+</html>
